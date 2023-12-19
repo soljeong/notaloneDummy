@@ -1,0 +1,22 @@
+# Spring Boot 설정!!!
+spring:
+    # Spring Boot 로그 설정!!
+    output:
+        ansi:
+            enabled: always
+
+# Database(H2) 설정!!
+    datasource:
+        url: jdbc:h2:~/notalone2
+        driver-class-name: org.h2.Driver
+        username: sa
+        password: 
+
+    # JPA 설정
+    jpa:
+        hibernate:
+            ddl-auto: update 
+        properties:
+            hibernate:
+                show_sql: true
+                format_sql: true
