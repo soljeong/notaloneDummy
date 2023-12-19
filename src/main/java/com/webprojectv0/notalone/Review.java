@@ -15,12 +15,11 @@ public class Review {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long reviewId;
 
-    private String reviewContent;
+    private String content;
 
     @ManyToOne
     private SiteUser user;
-    
+
     @ManyToOne
     private Product product;
-
 }

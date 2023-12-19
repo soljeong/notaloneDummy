@@ -1,13 +1,11 @@
 package com.webprojectv0.notalone;
 
-import java.util.List;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
+import java.util.List;
 import lombok.Data;
 
 @Data
@@ -20,8 +18,4 @@ public class Cart {
 
     @OneToMany
     private List<CartItem> cartItems;
-
-    @ManyToOne
-    private SiteUser siteUser;
-
 }
